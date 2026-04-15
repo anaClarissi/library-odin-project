@@ -1,0 +1,24 @@
+:root {
+    --blue: #133F8C;
+    --golden: #C49A4C;
+    --white: #FFFFFF;
+    --off-white: #E8E6DD; 
+    --light-gray: #F1F3F5;
+    --gray: #AAAAAA;
+
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'Barlow', Helvetica;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    font-weight: normal;
+}
