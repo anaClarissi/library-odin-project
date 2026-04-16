@@ -152,6 +152,16 @@ button.btn {
     background-color: var(--blue);
 }
 
+.btn-unread {
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.btn-unread:hover {
+    color: var(--white);
+    background-color: var(--golden);
+}
+
 .btn-remove {
     border: 1px solid var(--gray);
 }
