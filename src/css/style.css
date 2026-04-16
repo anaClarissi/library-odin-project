@@ -18,6 +18,7 @@
 }
 
 body {
+    position: relative;
     font-family: var(--font-primary);
     font-size: 1rem;
     font-weight: normal;
@@ -159,4 +160,131 @@ button.btn {
     background-color: var(--golden);
     border-color: var(--golden);
     color: var(--white);
+}
+
+
+
+/* MODAL */
+
+.modal {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1050;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 450px;
+    height: 100%;
+    max-height: 650px;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: var(--white);
+}
+
+.form-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    width: 100%;
+    padding: 0.5em;
+    color: var(--white);
+    font-family: var(--font-secondary);
+    font-size: 3rem;
+    font-weight: 700;
+    background-color: var(--blue);
+}
+
+.form-logo img {
+    max-width: 100px;
+}
+
+.form-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    height: 100%;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.5em;
+}
+
+.input-row label {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.input-row input {
+    width: 300px;
+    padding: 0.5em 1.5em;
+    border: 1px solid var(--gray);
+    outline: none;
+    border-radius: 30px;
+}
+
+.input-row.last {
+    justify-content: left;
+    gap: 1em;
+}
+
+.input-row input[type="checkbox"] {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    padding: 0 2.5em 2em;
+}
+
+.form-actions .btn {
+    padding: 0.5em;
+    width: 50%;
+    transition: all .3s ease;
+}
+
+.btn-cancel {
+    border: 1px solid var(--light-gray);
+    background-color: var(--light-gray);
+}
+
+.btn-cancel:hover {
+    color: var(--light-gray);
+    border-color: var(--gray);
+    background-color: var(--gray);
+}
+
+.btn-form-add {
+    color: var(--white);
+    border: 1px solid var(--blue);
+    background-color: var(--blue);
+}
+
+.btn-form-add:hover {
+    color: var(--white);
+    border-color: var(--golden);
+    background-color: var(--golden);
 }

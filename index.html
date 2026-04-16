@@ -93,7 +93,7 @@
 
             </div>
 
-            <button class="btn btn-add">
+            <button class="btn btn-add" type="button">
 
                 <span>Add book</span>
 
@@ -105,11 +105,74 @@
 
     </div>
 
+    <div class="modal">
+
+        <form>
+
+            <div class="form-logo">
+
+                <img src="src/assets/images/logo.png" alt="Logo">
+
+                <span>Add Book</span>
+
+            </div>
+
+            <div class="form-body">
+
+                <div class="input-row">
+
+                    <label for="in-title">Title</label>
+
+                    <input type="text" name="in-title" id="in-title" required>
+
+                </div>
+
+                <div class="input-row">
+
+                    <label for="in-author">Author</label>
+
+                    <input type="text" name="in-author" id="in-author" required>
+
+                </div>
+
+                <div class="input-row">
+
+                    <label for="in-pages">Pages</label>
+
+                    <input type="text" name="in-pages" id="in-pages" required>
+
+                </div>
+
+                <div class="input-row last">
+
+                    <label for="in-read">Have you read it?</label>
+                    
+                    <input type="checkbox" name="in-read" id="in-read">
+
+                </div>
+
+            </div>
+
+            <div class="form-actions">
+
+                <button class="btn btn-cancel" type="button">Cancel</button>
+
+                <button class="btn btn-form-add" type="submit">Add Book</button>
+
+            </div>
+
+        </form>
+
+    </div>
+
     <!-- BOOTSTRAP JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
     <!-- SCRIPT JS -->
     <script src="src/js/script.js"></script>
-    
+
+    <!-- MODAL JS -->
+    <script src="src/js/modal.js"></script>
+
 </body>
 </html>
